@@ -1,0 +1,42 @@
+.button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        90deg,
+        #ff3cac,
+        #784ba0
+    );
+
+    box-shadow:
+        0 8px 18px rgba(120, 75, 160, 0.2);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(120, 75, 160, 0.3);
+
+    filter: brightness(1.05);
+}
+
+.button:active {
+    transform: translateY(-1px);
+}

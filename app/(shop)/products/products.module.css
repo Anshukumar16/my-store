@@ -1,0 +1,178 @@
+.page {
+    min-height: 100vh;
+    padding: 50px 40px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255, 107, 203, 0.15),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(108, 99, 255, 0.15),
+            transparent 25%
+        ),
+        #faf9ff;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.title {
+    margin: 0;
+
+    font-size: 48px;
+    letter-spacing: -2px;
+
+    background: linear-gradient(
+        90deg,
+        #ff3cac,
+        #784ba0,
+        #2b86c5
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    margin-top: 10px;
+
+    color: #777;
+    font-size: 17px;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(230px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.card {
+    padding: 18px;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 15px 40px rgba(70, 50, 120, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(70, 50, 120, 0.15);
+}
+
+.imageWrapper {
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #fff0fa,
+        #f0edff
+    );
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+    transform: scale(1.08);
+}
+
+.productTitle {
+    margin: 18px 0 8px;
+
+    font-size: 19px;
+
+    color: #222;
+}
+
+.price {
+    margin: 0 0 16px;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    color: #784ba0;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.view {
+    padding: 11px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    color: #784ba0;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    background: #f1edff;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.view:hover {
+    background: #e5ddff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 35px 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

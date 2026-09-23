@@ -1,0 +1,169 @@
+.page {
+    min-height: 100vh;
+    padding: 60px 30px;
+    background:
+        radial-gradient(circle at 10% 10%, #ffd6f3 0%, transparent 30%),
+        radial-gradient(circle at 90% 90%, #d8d2ff 0%, transparent 30%),
+        linear-gradient(135deg, #fff7fb, #f5f3ff);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.successIcon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ff3cac, #784ba0);
+    box-shadow: 0 15px 35px rgba(120,75,160,.25);
+    animation: pop .6s ease;
+}
+
+.title {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: -2px;
+    background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #777;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 24px;
+    background: rgba(255,255,255,.72);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 25px 60px rgba(85,70,150,.12);
+}
+
+.orderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.label {
+    margin: 0 0 5px;
+    color: #888;
+    font-size: 14px;
+}
+
+.orderId {
+    margin: 0;
+    font-size: 28px;
+}
+
+.status {
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: #168a45;
+    background: #e9f9ef;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.itemTitle {
+    margin: 0;
+    font-size: 17px;
+}
+
+.quantity {
+    margin: 6px 0 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.itemPrice {
+    margin: 0;
+    font-weight: 700;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    font-size: 21px;
+}
+
+.cardTitle {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.address {
+    color: #666;
+    line-height: 1.7;
+}
+
+.address p {
+    margin: 4px 0;
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 40px 18px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .orderHeader {
+        align-items: flex-start;
+    }
+}

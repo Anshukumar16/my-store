@@ -1,0 +1,167 @@
+.page {
+    min-height: 100vh;
+    padding: 50px 40px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 107, 203, 0.12),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(108, 99, 255, 0.12),
+            transparent 25%
+        ),
+        #faf9ff;
+}
+
+.header {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.title {
+    margin: 0;
+
+    font-size: 46px;
+    letter-spacing: -2px;
+
+    background: linear-gradient(
+        90deg,
+        #ff3cac,
+        #784ba0,
+        #2b86c5
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.greeting {
+    margin-top: 8px;
+    color: #777;
+}
+
+.content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.summary {
+    margin-top: 30px;
+    padding: 25px;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 15px 40px rgba(70, 50, 120, 0.08);
+}
+
+.total {
+    margin: 0 0 18px;
+
+    font-size: 26px;
+    font-weight: 800;
+
+    color: #222;
+}
+
+.checkout {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 13px;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: 700;
+
+    background: linear-gradient(
+        90deg,
+        #ff3cac,
+        #784ba0
+    );
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.checkout:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(120, 75, 160, 0.3);
+}
+
+.empty {
+    max-width: 550px;
+    margin: 80px auto;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 20px 50px rgba(70, 50, 120, 0.08);
+}
+
+.emptyIcon {
+    font-size: 55px;
+}
+
+.emptyTitle {
+    margin: 15px 0 8px;
+
+    font-size: 28px;
+}
+
+.emptyText {
+    margin-bottom: 25px;
+
+    color: #777;
+}
+
+.shopping {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: 700;
+
+    background: linear-gradient(
+        90deg,
+        #ff3cac,
+        #784ba0
+    );
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 35px 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}
